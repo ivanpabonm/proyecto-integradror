@@ -3,18 +3,19 @@ body{
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 a{
     text-decoration: none;
     display: inline;
     color: black;
 }
-
+.body-home{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* ----------------------------------Estilos Header-------------------------------------------------- */
 header{
     width: 100%;
     height: 140px;
@@ -67,10 +68,11 @@ nav .profile-link a{
     color: black;
     border-bottom: 1px solid black;
 }
+/* ----------------------------Estilos Index---------------------------------- */
 .home-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    height: 100%;
+    height: 517px;
     background-image: url(../assets/Imágenes/Cover1.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -101,4 +103,99 @@ nav .profile-link a{
     font-weight: bold;
     font-size: 18px;;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* -------------------------------Estilos home------------------------------------------------------ */
+.main-home{
+    background-color: #e6e9ed;   
+    padding: 0px 50px 40px;
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+}
+.main-home a{
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 12px;
+    background-color: #65cfac;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.main-home-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 300px 1fr 320px;
+    grid-template-areas: "title . ."
+                         "image image title-news"
+                         "image image text-news"
+                         "image image buttom"
+                         "image image .";
+    
+}
+@media screen and (max-width: 700px){
+    .main-home-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "title title"
+                             "image image"
+                             "title-news title-news"
+                             "text-news text-news"
+                             "buttom .";
+    
+    }
+}
+.title{
+    grid-area: title;
+}
+.image{
+    max-width: 100%;
+    height: auto;
+    grid-area: image;
+    background-image: url(../assets/Images_home/main-news.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-news{
+    grid-area: title-news;
+    vertical-align: bottom;
+}
+.text-news{
+    grid-area: text-news;
+}
+.buttom{
+    grid-area: buttom;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px, 293px));
+    justify-content: center;
+    grid-gap: 28px;
+}
+.title-article{
+    text-align: center;
+}
+.text-article{
+    text-align: -webkit-center;
+}
+.post-image img{
+    width: 100%;
+    vertical-align: top;
+}
+@media screen and (max-width: 700px){
+    .post-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* ----------------Estilos footer------------------------------------------- */
+footer{
+ width: 100%;
+ height: 80px;
+ background-color: #22272d;
+ border-top: 35px solid #47cfac; 
+ text-align: center;
+}
+footer p{
+    color: white;
+    margin-top: 30px;;
 }
