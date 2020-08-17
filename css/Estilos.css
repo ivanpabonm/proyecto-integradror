@@ -154,6 +154,8 @@ nav .profile-link a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    vertical-align: top;
 }
 .title-news{
     grid-area: title-news;
@@ -197,5 +199,132 @@ footer{
 }
 footer p{
     color: white;
-    margin-top: 30px;;
+    margin-top: 30px;
+}
+/* ----------------Estilos Contact Us-----------------------------------------*/
+.mision-container{
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #263441;    
+}
+.information{
+    padding: 40px 60px;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+.vision-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.vision-image img{
+    padding: 20px 20px 20px 20px;
+}
+.vision-text{
+    padding: 20px 60px;
+    /* color: white; */
+    text-align: center;
+    font-size: x-large;
+}
+@media screen and (max-width: 700px){
+    .mision-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 700px){
+    .vision-container{
+        grid-template-columns: 1fr;
+    }
+}
+.how-job-container{
+    display: grid;
+}
+.how-job-container h2{
+    text-align: center;
+}
+.how-job-container p{
+    text-align: inherit;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px, 293px));
+    justify-content: center;
+    grid-gap: 5px;
+}
+.images-container img{
+    width: 100%;
+    vertical-align: top;
+}
+@media screen and (max-width: 700px){
+    .images-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/*-----------------------------------Estilos Blog Principal------------------------------------ */
+.body-home{
+    background-color: #e6e9ed;
+}
+.blog-image-container{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(100px, 600px));
+    justify-content: center;
+}
+.blog-image-container img{
+    width: 100%;
+    vertical-align: top;
+    padding-top: 10px;
+}
+@media screen and (max-width: 700px){
+    .blog-image-container{
+        grid-template-columns: repeat(1,minmax(100px, 300px));
+    }
+}
+@media screen and (max-width: 500px){
+    .blog-image-container{
+        grid-template-columns: repeat(1,minmax(100px, 250px));
+    }
+}
+.blog-text-container{
+    display: grid;
+    grid-template-rows:1fr;
+    padding: 10px 250px;
+}
+@media screen and (max-width: 700px){
+    .blog-text-container{
+        padding: 10px 150px;
+    }
+}
+.blog-text-container h3{
+    border-bottom: 1px solid;
+}
+/* --------------------------------Estilos Galeria----------------------------------------- */
+.container-galery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 5px;
+    justify-content: center;
+}
+.item{
+    border-radius: 20px;
+    padding: 10px;
+    background: #f2f2f2;
+    /* display: flex; */
+}
+.item img{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.level1{
+    grid-row-end: span 3;
+}
+.level2{
+    grid-row-end: span 2;
+}
+.level3{
+    grid-row-end: span 1;
 }
