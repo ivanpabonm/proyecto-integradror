@@ -231,6 +231,7 @@ footer p{
         grid-template-columns: 1fr;
     }
 }
+
 @media screen and (max-width: 700px){
     .vision-container{
         grid-template-columns: 1fr;
