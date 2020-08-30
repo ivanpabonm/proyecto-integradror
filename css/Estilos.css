@@ -40,7 +40,7 @@ header .header-icons-container .icons{
 }
 
 header .icons span{
-    color: black;
+    color: whites;
 }
 
 nav{
@@ -344,14 +344,12 @@ footer p{
     border-radius: 20px;
     padding: 10px;
     background: #f2f2f2;
-    /* display: flex; */
 }
 .item img{
     max-width: 100%;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
 }
 .level1{
     grid-row-end: span 3;
