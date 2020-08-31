@@ -1,56 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/Estilos.css">
-</head>
-<body class="body-login">
-    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
-        <div class="card card0 border-0">
-            <div class="row d-flex">
-                <div class="col-lg-6">
-                    <div class="card1 pb-5">
-                        <div class="row"><a href="index.html"><img src="assets/logo/Logo-negro1.png" alt="Logo"></a> </div>
-                        
-                        <!-- <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img src="" class="image"> </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card2 card border-0 px-4 py-5">
-                        <div class="row px-3 mb-4">
-                            <div class="line"></div> <small class="or text-center"></small>
-                            <div class="line"></div>
-                        </div>
-                        <div class="row px-3"> <label class="mb-1">
-                                <h6 class="mb-0 text-sm">Dirección de correo electrónico</h6>
-                            </label> <input class="mb-4" type="text" name="email" placeholder="Introduzca una dirección de correo valida"> </div>
-                        <div class="row px-3"> <label class="mb-1">
-                                <h6 class="mb-0 text-sm">Contraseña</h6>
-                            </label> <input type="password" name="password" placeholder="Introduzca la contraseña"> </div>
-                        <div class="row px-3 mb-4">
-                            <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Recuérdame
-                            </label> </div> <a href="#" class="ml-auto mb-0 text-sm">¿Olvido su contraseña?</a>
-                        </div>
-                        <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center">Login</button> </div>
-                        <div class="row mb-4 px-3"> <small class="font-weight-bold">¿No tienes una cuenta? <a href="Registro.html" class="text-danger ">Registrate</a></small> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-blue py-4">
-                
-            </div>
-        </div>
-    </div>
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+  </head>
+  <body class="body-login" style="overflow:hidden">
+    <div class="container">
+        <div class="row text-center login-page">
+	   <div class="col-md-12 login-form">
+	      <form action="claseDestino.php" method="post"> 			
+	         <div class="row">
+		    <div class="col-md-12 login-form-header">
+		       <p class="login-form-font-header">Huesos<span> y Delicias</span><p>
+		    </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <input name="usuario" type="text" placeholder="Usuario" required/>
+		   </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <input name="password" type="password" placeholder="Contraseña" required/>
+		   </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 login-from-row">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                    Recordar mis datos
+                </label>
+            </div>
+         </div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <button class="btn btn-info">Entrar</button>
+		   </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 login-from-row">
+               <a href="home.html" class="regresar">Regresar</a>
+            </div>
+         </div>
+	    </form>
+	</div>
+     </div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-</body>
+  </body>
 </html>
