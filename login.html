@@ -1,62 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huesos y Ddelicias</title>
     <link rel="stylesheet" href="css/Estilos.css">
-  </head>
-  <body class="body-login" style="overflow:hidden">
-    <div class="container">
-        <div class="row text-center login-page">
-	   <div class="col-md-12 login-form">
-	      <form action="claseDestino.php" method="post"> 			
-	         <div class="row">
-		    <div class="col-md-12 login-form-header">
-		       <p class="login-form-font-header">Huesos<span> y Delicias</span><p>
-		    </div>
-		</div>
-		<div class="row">
-		   <div class="col-md-12 login-from-row">
-		      <input name="usuario" type="text" placeholder="Usuario" required/>
-		   </div>
-		</div>
-		<div class="row">
-		   <div class="col-md-12 login-from-row">
-		      <input name="password" type="password" placeholder="Contraseña" required/>
-		   </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 login-from-row">
-                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                <label class="form-check-label" for="gridCheck1">
-                    Recordar mis datos
-                </label>
+    <link rel="icon" type="image/png" href="assets/logo/icon/png/favicon.ico.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body class="registro">
+  <div class="modal_dialog text-center">
+    <div class="col-sm-12">
+      <div class="modal-container">
+        <form class="col-12">
+          <div class="form-group">
+            <div class="form-group">
+              <input type="username" class="form-control" id="name" aria-describedby="emailHelp" placeholder="username"> 
+              <!-- <small id="emailHelp" class="form-text text-muted">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</small> -->
             </div>
-         </div>
-		<div class="row">
-		   <div class="col-md-12 login-from-row">
-		      <button class="btn btn-info">Entrar</button>
-		   </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 login-from-row">
-               <a href="home.html" class="regresar">Regresar</a>
+          <div class="form-group">
+              <input type="password" id="Password" class="form-control" aria-describedby="passwordHelpBlock" placeholder="password">
+              <!-- <small id="passwordHelpBlock" class="form-text text-muted">
+                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+              </small> -->
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                remember my password
+              </label>
             </div>
-         </div>
-	    </form>
-	</div>
-     </div>
-  </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button><br>
+          <a style="text-decoration:none" href="/home.html" ><button type="button" class="btn btn-success btn-lg btn-block">to return</button></a>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+<script src="/js/registro.js" ></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous" ></script>
+<script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </html>
