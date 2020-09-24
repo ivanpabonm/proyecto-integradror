@@ -438,31 +438,17 @@ footer p{
     }
 }
 /* /* ----------------------------------------Estilos Formulario registros------------------------------------ */
-.registro{
-    background-image: url(https://images5.alphacoders.com/380/380567.png);
-}
 
-.modal_dialog{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;    
-    background: rgba(0, 0, 0, 0.2);
-    width: 400px;
-    height: 600x;
-    border-radius: 10px;
-    box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.75);
+.body__registro{
+    margin: 0px;
+    padding: 0px;
+        background-image: url(https://images5.alphacoders.com/380/380567.png);
 }
-.col-sm-12{
-    margin-top: 20px;
-}
-.form-group input[type=text]{
-    border: none;
-    border-bottom: 1px solid #ffffff;
-}
-.formulario__input-error{
+    .container__forulario-registro{    position: absolute;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);    box-sizing: border-box;        background: rgba(0, 0, 0, 0.2);    width: 350px;    height: auto;    border-radius: 10px;    box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.75);}.col-sm-12{    margin-top: 20px;}.formulario__grupo{    margin-bottom: 10px;
+    }.formulario__input-error{
     font-size: 12px;
+    font-weight: bold;
+    color: white;
     margin-bottom: 0px;
     display: none;
 }
@@ -472,12 +458,45 @@ footer p{
 .formulario__validacion-estado{
     position: absolute;
     right: 20px;
-    margin-top: -30px;
+    margin-top: -25px;
     z-index: 100;
     font-size: 16px;
     opacity: 0;
 }
-
+.formulario__grupo-terminos{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.formulario__mensaje{
+    display: none;
+}
+.formulario__mensaje-activo{
+    display: block;
+}
+.formulario__mensaje-exito{
+    font-size: 14px;
+    color: white;
+    display: none;
+    }
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #13d12d;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input{
+    border: 2px solid #bb2929;
+    border-radius: .25rem;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+.formulario__btn-regresar{
+    margin-bottom: 10px;
+}
 
 
 /* -------------------------------------------Estilos login----------------------------------------------------- */
