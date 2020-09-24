@@ -72,6 +72,7 @@ formulario.addEventListener('submit', (e) =>{
 			icono.classList.remove('formulario__grupo-correcto');
         });
         document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
+        document.getElementById('formulario__mensaje-terminos').classList.remove('formulario__mensaje-terminos-activo');
     }
     else {
         if(campos.correo && campos.nombre && campos.usuario && campos.contraseña)
@@ -84,5 +85,4 @@ formulario.addEventListener('submit', (e) =>{
             document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
         }
 	}
-});
 });
