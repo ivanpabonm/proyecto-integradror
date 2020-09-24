@@ -74,6 +74,15 @@ formulario.addEventListener('submit', (e) =>{
         document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
     }
     else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+        if(campos.correo && campos.nombre && campos.usuario && campos.contraseña)
+        {
+            document.getElementById('formulario__mensaje-terminos').classList.add('formulario__mensaje-terminos-activo');
+            document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
+        }
+        else
+        {
+            document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+        }
 	}
+});
 });

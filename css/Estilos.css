@@ -474,6 +474,13 @@ footer p{
 .formulario__mensaje-activo{
     display: block;
 }
+.formulario__mensaje-terminos{
+    font-size: 12px;
+    display: none;
+}
+.formulario__mensaje-terminos-activo{
+    display: block;
+}
 .formulario__mensaje-exito{
     font-size: 14px;
     color: white;
